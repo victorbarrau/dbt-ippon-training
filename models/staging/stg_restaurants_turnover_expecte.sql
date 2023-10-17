@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
 Select restaurant.name, sum(orders.amount) as sum_amount_cash
 from {{ref("base_orders")}} as orders
 inner join {{ref("base_restaurants")}} as restaurant
