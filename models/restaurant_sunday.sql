@@ -1,0 +1,1 @@
+select sum(nb_employees) AS nombre_total FROM {{ref("restaurants")}}

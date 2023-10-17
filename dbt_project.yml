@@ -25,6 +25,9 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+vars:
+  nb_restaurants_to_show: 10
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -32,3 +35,7 @@ models:
   dbt_ippon_training:
     # Config indicated by + and applies to all files under models/
     +materialized: table
+    staging:
+      +materialized: ephemeral 
+
+  

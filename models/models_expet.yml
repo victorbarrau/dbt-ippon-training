@@ -1,0 +1,10 @@
+version: 2
+
+models:
+
+
+  - name: stg_restaurants_turnover_expecte
+    tests:
+    - dbt_utils.equality:
+        compare_model: ref('revenue_expected')
+        tags: ['unit_testing']
