@@ -1,0 +1,5 @@
+IDENTIFIER,NAME,ADDRESS,NB_EMPLOYEES,OPEN_ON_SUNDAY
+1,Chez rolivet,Place de la Bourse - Toulouse,3," true"
+2,Chez vheng,Avenue de la Grande Armee - Paris,4," true"
+3,Chez tjumeaux,Avenue de la Grande Armee - Paris,2," true"
+4,Chez nachereiner,Allees de Tourny - Bordeaux,1," false"

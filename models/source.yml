@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: snowflake # this is the source_name
+    database: DB_DBT_VBARRAU_DEV
+    schema: SOURCE
+
+    tables:
+      - name: restaurants # this is the table_name
+        columns:
+          - name: Identifier
+            description: identifier of the restaurant
+                  
+      - name: orders
+        columns:
+          - name: AMOUNT
+            description: the amount of cash
+            tests:
+              - not_null
+              - accepted_values
+          - name: identifier
+            description: id of the order
+            tests:
+              - not_null
+              - unique
+      - name: fuzzy_orders
+
+      - name: dishes
